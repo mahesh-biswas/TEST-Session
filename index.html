@@ -1,0 +1,19 @@
+<html>
+    <head>
+      <script>
+        window.onload = function(){
+            alert('hello');
+            let buttonRef = document.getElementById('thebutton');
+            buttonRef.addEventListener('click', function(){alert('button clicked');});
+            let inputRef = document.getElementById('theinput');
+            inputRef.addEventListener('click', function(){alert('input clicked');});
+            
+        };
+        function onchangeInput(){
+            alert('input changes');
+        }
+      </script>  
+    </head>
+    <input id="theinput" type="text" onchange="onchangeInput()"/>
+    <button id="thebutton" >The Button</button>
+</html>
